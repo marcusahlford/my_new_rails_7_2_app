@@ -79,7 +79,7 @@ Rails.application.configure do
   # config.generators.apply_rubocop_autocorrect_after_generate!
 
   # Allow requests from the specific Codespace-generated URL
-  if ENV['CODESPACES'] == 'true'
+  if ENV["CODESPACES"] == "true"
     config.hosts << "#{ENV['CODESPACE_NAME']}-3000.#{ENV['GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN']}"
   end
 end
